@@ -16,6 +16,7 @@ import java.util.Scanner;
 public class ArithmeticBase 
 {
  public double x,y;
+ enum arithmetic{PLUS, MINUS, TIMES, DIVIDE};
     double calculate(double x, double y) 
         {
         Scanner sc =new Scanner(System.in);
@@ -23,7 +24,7 @@ public class ArithmeticBase
         String s= sc.next();
         switch (s.toUpperCase()) 
         {
-            case "PLUS":
+            case  "PLUS":
                 return x + y;
             case "MINUS":
                 return x - y;
